@@ -122,7 +122,8 @@
                             "displayNameEvent": "Active power changed",
                             "type": "double",
                             "unit": "Watt",
-                            "defaultValue": 0
+                            "defaultValue": 0,
+                            "filter": "adaptive"
                         },
                         {
                             "id": "cdb34487-3d9b-492a-8c33-802f32a2e90e",
@@ -271,7 +272,8 @@
                             "displayNameEvent": "Active power changed",
                             "type": "double",
                             "unit": "Watt",
-                            "defaultValue": 0
+                            "defaultValue": 0,
+                            "filter": "adaptive"
                         },
                         {
                             "id": "31b9032f-f994-472b-94bd-44f9fb094801",
