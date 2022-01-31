@@ -1,3 +1,16 @@
+nymea-plugins-modbus (0.30.1) xenial; urgency=medium
+
+  [ Simon Stürz ]
+  * Update modbus connection generate tool
+  * Huawei: Add huawei plugin for inverter, meter and energy storage
+
+  [ Michael Zanetti ]
+  * Wallbe: Update plugin metadata
+  * Packaging: Split translations and consolidate package descriptions
+  * Split energymeters into separate inepro Metering and B+G E-Tech
+    plugins
+
+ -- Jenkins <jenkins@nymea.io>  Mon, 31 Jan 2022 10:30:11 +0100
 
 nymea-plugins-modbus (0.30.0) xenial; urgency=medium
 
