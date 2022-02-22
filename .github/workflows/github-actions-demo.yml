@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     container:
      #image: lheiz/dc-armv7-nymea-d10:latest
-     image: debian/buster:latest
+     image: debian:buster
      #options: --entrypoint "/bin/sh"
     steps:  
       - uses: actions/checkout@v2
