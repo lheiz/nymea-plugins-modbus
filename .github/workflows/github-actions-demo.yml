@@ -9,5 +9,5 @@ jobs:
      #options: --entrypoint "/bin/sh"
     steps:  
       - uses: actions/checkout@v2
-      - run: uname -a
+      - run: cat /etc/*release
 
