@@ -3,8 +3,8 @@ on: [push]
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
+    container: lheiz/dc-armv7-nymea-d10:latest
     steps:  
-    - uses: docker://lheiz/dc-armv7-nymea-d10:latest
     - uses: actions/checkout@v2
     - name: What OS is running
       run: uname -a
