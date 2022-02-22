@@ -7,6 +7,6 @@ jobs:
      image: lheiz/dc-armv7-nymea-d10:latest
      options: --entrypoint "/bin/sh"
     steps:  
-    - uses: actions/checkout@v2
-    - run: uname -a
+      - uses: actions/checkout@v2
+      - run: uname -a
 
