@@ -3,7 +3,9 @@ on: [push]
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
-    container: lheiz/dc-armv7-nymea-d10:latest
+    container:
+     image: lheiz/dc-armv7-nymea-d10:latest
+     options: --entrypoint '/bin/sh -c'
     steps:  
     - uses: actions/checkout@v2
     - name: What OS is running
