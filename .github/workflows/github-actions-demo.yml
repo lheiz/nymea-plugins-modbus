@@ -4,8 +4,9 @@ jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     container:
-     image: lheiz/dc-armv7-nymea-d10:latest
-     options: --entrypoint "/bin/sh"
+     #image: lheiz/dc-armv7-nymea-d10:latest
+     image: debian/buster:latest
+     #options: --entrypoint "/bin/sh"
     steps:  
       - uses: actions/checkout@v2
       - run: uname -a
