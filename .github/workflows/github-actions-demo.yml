@@ -7,5 +7,9 @@ jobs:
      image: lheiz/dc-armv7-nymea-d10:latest
     steps:  
       - uses: actions/checkout@v2
-      - run: dpkg-buildpackage -b -aarmhf
-
+      - run: CONFIG_SITE=/etc/dpkg-cross/cross-config.armhf  gosu root dpkg-buildpackage -b -aarmhf -Pcross,nocheck && mkdir -p build && cp ../*.deb build
+      - name: Archive debian packages
+        uses: actions/upload-artifact@v2
+        with:
+          name: armhf-packages
+          path:  ./build/*.deb
