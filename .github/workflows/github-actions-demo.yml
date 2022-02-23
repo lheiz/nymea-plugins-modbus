@@ -7,5 +7,5 @@ jobs:
      image: lheiz/dc-armv7-nymea-d10:latest
     steps:  
       - uses: actions/checkout@v2
-      - run: cat /etc/*release
+      - run: dpkg-buildpackage -b
 
